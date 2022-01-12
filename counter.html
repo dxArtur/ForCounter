@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>F0R</title>
+    <style>
+        body{
+            background-color: purple;
+            display: block;
+        }
+
+        #area{
+            background-color: white;
+            width: 70%;
+            height: auto;
+            min-height: 470px;
+            margin: auto;
+            margin-top: 5%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12pt;
+            text-align: center;
+            border-radius: 10px;
+            align-items: center;
+            display:block;
+            
+            
+            
+        }
+
+        #box{
+            width: 90%;
+            margin-left: 10%;
+            display: flex;
+            flex-direction: row;
+            margin-top: 5%;
+            align-items: center;
+        }
+
+        #label{
+            font-style: italic;
+            font-weight: bolder;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            margin-left: 10%;
+            width: 35%;
+        }
+        
+        #tittle{
+            padding-top: 5%;
+            display: block;
+            font-style: italic;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            
+        }
+
+        #input{
+            text-align: left;
+            
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+        }
+
+        
+        input{  
+            margin-top: 5%;
+        }
+        
+        
+        label{
+            margin-top: 5%;
+        }
+
+        button{
+            margin-top: 2%;
+            width: 40%;
+            height: 25px;
+            border-radius: 10px;
+            background-color: purple;
+            color: white;
+            border: rgb(56, 23, 88);
+            outline-style: none;
+        }
+
+        button:hover{
+            background-color:rgb(106, 56, 153);
+            color: white;
+            height: 25px;
+        }
+
+        #result{
+            margin-top: 2%;
+            display:block;
+            
+        }
+
+        #boxresult{
+            min-height: 20%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="area">
+        <div id="tittle">
+            <label id="labeltittle">For Counter</label>
+        </div>
+        <div id="box">
+            <div id="label">
+                <label>type a number for to begin:</label>
+                <label>type a number for to finish:</label>
+                <label>type a number for to jump:</label>
+            </div>
+            <div id="input">
+                <input id="inputbegin">
+                <input id="inputfinish">
+                <input id="jump">
+            </div>
+        </div>
+            <button id="buttoncalculate">calculate</button>
+            <div id="result">
+                <div>result:</div>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
